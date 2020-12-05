@@ -1,5 +1,7 @@
 const mealsEl = document.getElementById("meals");
 const favouriteContainer = document.getElementById("fav-meals");
+const mealPopup = document.getElementById("meal-popup");
+const closePopupBtn = document.getElementById("close-popup");
 
 const searchTerm = document.getElementById("search-term");
 const searchBtn = document.getElementById("search");
@@ -150,3 +152,7 @@ searchBtn.addEventListener("click", async () => {
     });
   }
 });
+
+popupCloseBtn.addEventListener("click", () => {
+  mealPopup.classList.add("hidden")
+})
